@@ -29,3 +29,16 @@ Route::get('/modelo', function () {
     ['nome' => $nome,
     'idade' => $idade]);
 });
+
+Route::get('/exercicio00', function () {
+    $data = date("d/m/y");
+    $hora = date('H:i:s'); 
+
+    
+    return view('exercicio00',
+    [
+      'data' => $data,
+      'hora'=> $hora
+    ]);
+});
+
